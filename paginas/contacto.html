@@ -33,45 +33,49 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-           
+    <main class="main-container_contacto">
+        <figure class="video-contacto">
+            <video muted preload="auto" autoplay="on" loop>
+                <source src="../assets/video-contacto.mp4"/>
+            </video>
+        </figure>
+        <section class="box-form">
+            <form>
+                <label for="nombre">
+                    <span>¿Cómo te llamas?</span> <br>
+                    <input type="text" id="nombre" 
+                            placeholder="Tu nombre" 
+                            name="nombre"
+                            autocomplete="name" required />
+                </label>
+                <label for="telefono">
+                    <span>Teléfono</span> <br>
+                    <input type="tel" id="telefono" 
+                            placeholder="Tu teléfono" 
+                            name="telefono" 
+                            autocomplete="tel" required />
+                </label>
+                <label for="email">
+                    <span>Correo</span> <br>
+                    <input type="email" id="email" 
+                            placeholder="raionhato@raion.com" 
+                            name="correo" 
+                            autocomplete="email" required />
+                </label>
+                <label for="hora"> 
+                    <span>¿A qué hora prefieres que te contactemos?</span> <br>
+                    <input type="time" id="hora" name="hora" />
+                </label>
+                <label for="servicio">
+                    <span>¿Qué te interesa?</span> <br>
+                    <select name="servicio" id="">
+                        <option value="Funcional">Funcional</option>
+                        <option value="Crosstraining">Crosstraining</option>
+                    </select>
+                </label>
+                <input type="submit" value="Enviar" />
+            </form>
         </section>
-        <form>
-            <label for="nombre">
-                <span>¿Cómo te llamas?</span>
-                <input type="text" id="nombre" 
-                        placeholder="Tu nombre" 
-                        name="nombre"
-                        autocomplete="name" required />
-            </label>
-            <label for="telefono">
-                <span>Teléfono</span>
-                <input type="tel" id="telefono" 
-                        placeholder="Tu teléfono" 
-                        name="telefono" 
-                        autocomplete="tel" required />
-            </label>
-            <label for="email">
-                <span>Correo</span>
-                <input type="email" id="email" 
-                        placeholder="raionhato@raion.com" 
-                        name="correo" 
-                        autocomplete="email" required />
-            </label>
-            <label for="hora">
-                <span>¿Cuándo prefieres que te contactemos?</span>
-                <input type="time" id="hora" name="hora" />
-            </label>
-            <label for="servicio">
-                <span>Qué te interesa</span>
-                <select name="servicio" id="">
-                    <option value="Funcional">Funcional</option>
-                    <option value="Crosstraining">Crosstraining</option>
-                </select>
-            </label>
-            <input type="submit" />
-        </form>
     </main>
     <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d6265.807803637661!2d-0.7093194235608401!3d38.25853476869681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d38.2617298!2d-0.7057882999999999!4m5!1s0xd63b7e89a6f2109%3A0x43220da1ab5b04c0!2sraionhato%20elche!3m2!1d38.2545731!2d-0.7019965!5e0!3m2!1ses!2ses!4v1680196100570!5m2!1ses!2ses"
