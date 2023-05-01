@@ -91,21 +91,20 @@ footer {
     padding: 10px;
 }
 
-.cont-repon {
+.cont-respon {
     position: relative;
-    padding-bottom: 75%;
     height: 0;
     overflow: hidden;
-    max-width: 600px;
-    max-height: 400px;
+    padding-bottom: 56.25%;
 }
-.iframe-respon {
-    top:0;
+.cont-respon iframe {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
+/* estilos horarios */
 .table-cont {
     text-align: center;
     margin-top: 10px;
