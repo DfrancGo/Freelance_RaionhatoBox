@@ -246,7 +246,11 @@ form label input {
     table {
         font-size: 1.6rem;
     }
-    /* estilos de contacto */
+    /* estilo de contacto */
+    .main-container_contacto {
+        justify-content: space-around;
+    }
+    /* estilos de servicios */
     .card-servicios {
         display: flex;
         flex-direction: row;
