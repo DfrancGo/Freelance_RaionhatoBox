@@ -1,0 +1,171 @@
+@import './base/listas';
+@import './base/map';
+@import './base/extend';
+@import './base/mixin';
+
+@import './componentes/servicios';
+@import './componentes/contacto';
+@import './componentes/horarios'; 
+@import './componentes/equipo'; 
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    body {
+        font-size: 1.6rem;
+        font-family: 'Abel', sans-serif;
+        margin: map-get($obligado, marg );
+        padding: map-get($obligado, diez );
+        figure {
+            line-height: 0;
+          }
+        header{
+            text-align: map-get($obligado, txt-cnt );
+            margin-bottom: map-get($obligado, diez );
+            .title-img {
+                width: 100%;
+            }
+        nav {
+            text-align: map-get($obligado, txt-cnt );
+            background-color: nth($list: $colores, $n: 2 );
+            .main-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 5px;
+                padding: 5px;
+                max-width: 800px;
+                .main-nav__item {
+                    list-style: map-get($obligado, deco );
+                    margin-bottom: 2px;
+                }
+                .main-nav__item :hover {
+                    color: nth($list: $colores, $n: 1 );  
+                }
+                .main-nav__item ::after{
+                    content: " |";
+                }
+                li a {
+                    text-decoration: map-get($obligado, deco );
+                    color: nth($colores, $n: 3); 
+                }    
+            }    
+        }
+      }
+      .top-main {
+        text-align: map-get($obligado, txt-cnt );
+        figure {
+            video{
+                width: 340px;
+            }
+        }
+    }
+    .descripcion-inicio{
+        padding: map-get($obligado, diez );
+        color: nth($colores, $n: 2);
+        h1{
+            color: nth($colores, $n: 1 );
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+    }
+    #galery {
+        background-color: nth($colores, $n: 1 );
+        width: 100%;
+        justify-items: map-get($obligado, txt-cnt );
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        column-gap: 7px;
+        row-gap: 7px;
+        margin-top: map-get($obligado, diez );
+        padding-bottom: map-get($obligado, diez );
+        padding-top: map-get($obligado, diez );
+        .box-img img {
+            border-radius: 8px;
+        }
+    }
+    footer {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: nth($colores, $n: 2 );
+        justify-items: map-get($obligado, txt-cnt );
+        align-items: map-get($obligado, txt-cnt );
+    }
+    
+    .log_footer{
+        padding: map-get($obligado, diez );
+    }
+    }
+}
+@media (min-width:600px) {
+    .top-main {
+        @include rowcent;
+    }
+    #galery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: map-get($obligado, diez );
+        grid-template-rows: map-get($obligado, marg );
+        overflow: hidden;
+    }
+}
+@media (min-width:900px) {
+    .main-nav {
+        margin: map-get($obligado, marg );
+        font-size: nth($font-sz , $n: 2 );
+    }
+    .main-container {
+        margin-bottom: map-get($obligado, diez );
+        .descripcion-inicio {
+            h1 {
+                font-size: nth($font-sz , $n: 3 );
+            }
+            p {
+                font-size: nth($font-sz , $n: 2 );
+            }
+        }
+        .top-main figure video {
+            width: 480px;
+        }
+        #galery {
+            grid-template-columns: repeat(3, 1fr);
+            overflow: hidden;
+            align-items: map-get($obligado, txt-cnt );
+        }
+    }
+}
+@media (min-width:1200px) {
+    body {
+        max-width: 1500px;
+        .top-main{
+            .descripcion-inicio {
+                h1 {
+                    font-size: nth($font-sz , $n: 4 );
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: nth($font-sz , $n: 5 );
+                }
+            figure{
+                video {
+                    width: 720px;
+                }
+            } 
+        }
+    }    
+        
+        #galery {
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            margin-top: map-get($obligado, diez );
+            padding-top: map-get($obligado, diez );
+            justify-content: map-get($obligado, txt-cnt );
+            grid-column-gap:20px;
+        }
+    }
+}

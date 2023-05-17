@@ -1,0 +1,24 @@
+.cont-card_equipo {
+    @extend %contcard;
+    .card-equipo{
+        @extend %cardser;
+        max-width: 650px;
+        p {
+            padding: 5px;
+        }
+        figure {
+            @extend %cardfig;
+            h2 {
+                @extend %stltit;
+            }
+        }
+    }
+}
+@media (min-width:600px) {
+    .card-equipo {
+        @include rowcent();
+        p {
+            margin-top: 18px;    
+        }
+    }        
+}

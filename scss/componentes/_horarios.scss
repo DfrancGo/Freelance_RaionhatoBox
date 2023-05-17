@@ -1,0 +1,49 @@
+.table-cont {
+    text-align: map-get($obligado, txt-cnt );
+    margin-top: map-get($obligado, diez );
+    margin-bottom: map-get($obligado, diez );
+    padding: 5px;
+    background-color: nth($colores, $n: 3 );
+    table {
+        font-size: nth($font-sz, $n: 6);
+        margin: auto;
+        color: nth($colores, $n: 2);
+        th {
+            background-color: nth($colores, $n: 5);
+            padding: 5px;
+        }
+        td {
+            background-color: nth($colores, $n: 5);
+        }
+    }
+}
+.price-servicios {
+    @extend %contcard;
+    div{
+        background-color: nth($colores, $n: 3);
+        text-align: center;
+        border: 2px solid #3F4A6B;
+        padding: map-get($obligado, diez );
+        max-width: 350px;
+        margin: map-get($obligado, diez );
+        border-radius: 8px;
+        ul {
+            li{
+                list-style: map-get($obligado, deco);
+            }
+        }
+    }
+}
+@media (min-width:600px) {
+    .table-cont {
+        table {
+            font-size: nth($font-sz, $n: 1);
+            th {
+                padding: 3px;
+            }
+            td {
+                padding: 3px;
+            }
+        }
+    }
+}

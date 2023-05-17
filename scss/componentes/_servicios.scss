@@ -1,0 +1,29 @@
+.container-servicios{
+    @extend %contcard;
+    .card-servicios {
+        @extend %cardser;
+        max-width: 650px;
+    }
+    div {
+        p {
+            padding: 5px;
+        }
+        figure {
+            @extend %cardfig;
+            h2 {
+                @extend %stltit;
+            }
+            img {
+                border-radius: 8px;
+            } 
+        }
+    }
+}
+@media (min-width:600px) {
+    .card-servicios {
+        @include rowcent();
+        p {
+            margin-top: 18px;    
+        }
+    }        
+}

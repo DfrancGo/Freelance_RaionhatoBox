@@ -1,0 +1,35 @@
+%contcard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba( 192, 21, 24, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+%flexcenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+%cardser{
+    width: 95%;
+    color: #DAEFF5;
+    background-color: #202124;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+%cardfig{
+    line-height: 1;
+    text-align: center;
+    color: #D1D7EB;
+}
+%stltit{
+    font-size: 2.4rem;
+    text-decoration:underline;
+    margin-bottom: 10px;
+}
