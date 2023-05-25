@@ -1,19 +1,23 @@
 .table-cont {
+    overflow: scroll;
+    width: 100%;
     text-align: map-get($obligado, txt-cnt );
     margin-top: map-get($obligado, diez );
     margin-bottom: map-get($obligado, diez );
-    padding: 5px;
+    padding: 7px;
     background-color: nth($colores, $n: 3 );
     table {
         font-size: nth($font-sz, $n: 6);
         margin: auto;
         color: nth($colores, $n: 2);
+        width: 100%;
         th {
             background-color: nth($colores, $n: 5);
             padding: 5px;
         }
         td {
             background-color: nth($colores, $n: 5);
+            padding: 3px;   
         }
     }
 }

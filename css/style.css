@@ -121,18 +121,27 @@
     width: 100%;
     max-width: 720px;
   }
+  .main-container_contacto .box-form {
+    font-size: 2rem;
+  }
+  .main-container_contacto .box-form form label input {
+    margin-top: 10px;
+  }
 }
 .table-cont {
+  overflow: scroll;
+  width: 100%;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 7px;
   background-color: #DAEFF5;
 }
 .table-cont table {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: auto;
   color: #202124;
+  width: 100%;
 }
 .table-cont table th {
   background-color: #D1D7EB;
@@ -140,6 +149,7 @@
 }
 .table-cont table td {
   background-color: #D1D7EB;
+  padding: 3px;
 }
 
 .price-servicios div {
@@ -204,6 +214,10 @@ html body header {
   text-align: center;
   margin-bottom: 10px;
 }
+html body header .logo-head:hover {
+  transition: all 0.5s;
+  transform: scale(1.07);
+}
 html body header .title-img {
   width: 100%;
 }
@@ -264,12 +278,16 @@ html body #galery .box-img img {
   border-radius: 8px;
 }
 html body footer {
+  color: #D1D7EB;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   background-color: #202124;
   justify-items: center;
   align-items: center;
+}
+html body footer p {
+  margin-bottom: 10px;
 }
 html body .log_footer {
   padding: 10px;

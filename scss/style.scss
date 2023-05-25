@@ -27,6 +27,10 @@ html {
         header{
             text-align: map-get($obligado, txt-cnt );
             margin-bottom: map-get($obligado, diez );
+            .logo-head:hover {
+                transition: all 0.5s;
+                transform: scale(1.07);
+            }
             .title-img {
                 width: 100%;
             }
@@ -45,7 +49,7 @@ html {
                     margin-bottom: 2px;
                 }
                 .main-nav__item :hover {
-                    color: nth($list: $colores, $n: 1 );  
+                    color: nth($list: $colores, $n: 1 ); 
                 }
                 .main-nav__item ::after{
                     content: " |";
@@ -85,17 +89,21 @@ html {
         margin-top: map-get($obligado, diez );
         padding-bottom: map-get($obligado, diez );
         padding-top: map-get($obligado, diez );
-        .box-img img {
+        .box-img img{
             border-radius: 8px;
         }
     }
     footer {
+        color: nth($colores, $n: 5);
         padding-top: 20px;
         display: flex;
         flex-direction: column;
         background-color: nth($colores, $n: 2 );
         justify-items: map-get($obligado, txt-cnt );
         align-items: map-get($obligado, txt-cnt );
+        p {
+            margin-bottom: 10px;
+        }
     }
     
     .log_footer{
